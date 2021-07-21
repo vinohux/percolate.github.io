@@ -22,7 +22,7 @@ a {
 header img {
 	margin-top: 24px;
 }
-.mobile-hero-img {
+.mobile-img-container {
 	display: none;
 }
 .container {
@@ -34,8 +34,6 @@ header img {
     background-repeat: no-repeat;
     background-position-x: -46px;
     background-position-y: 84px;
-    /*background-position-x: -6%;
-    background-position-y: 71%;*/
 }
 .links {
     margin-top: 116px;
@@ -63,8 +61,7 @@ header img {
 	margin-bottom: 48px;
 	font-size: 64px;
 	line-height: 68px;
-	font-weight:600;
-	width: 715px;
+	font-weight:600;	
 }
 .hero-container h1 span {
 	font-weight: 400;
@@ -72,7 +69,7 @@ header img {
 .hero-left {
 	display: flex;
     flex-direction: column;
-    /*width: 40%;*/
+    width: 715px;
 }
 .hero-buttons {
     display: flex;
@@ -172,42 +169,35 @@ header img {
   	margin-top: -19px;
 }
 
-/*@media  screen and (max-width: 1124px) {*/
-	@media  screen and (min-device-width: 1038px) and (max-width: 1211px) {
+@media screen and (min-device-width: 733px) and (max-width: 965px) {
 	.hero-container {
-		justify-content: space-between;
-		background-image: linear-gradient(to left, transparent 25%, white 60%), url(../images/wave.svg);
-	    background-repeat: no-repeat;
-	    background-position-x: -71px;
-	    background-position-y: 126px;
+		background-image: linear-gradient(to left, transparent 1%, white 67%), url(../images/wave.svg);
+	    background-position-x: -173px;
+    	background-position-y: 48px;
 	}
-	.hero-container h1 {
-		width: 100%;
-	}
-    .hero-right img {
-		/*width: 348px;*/
-		/*height: 348px;*/
+	.hero-right img {
+		width: 348px;
+		height: 348px;
 		margin-top: 0;
 	}
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1038px) {
-	.hero-container h1 {
-			width: 520px;
+
+@media screen and (min-device-width: 1011px) and (max-width: 1132px) {
+	.hero-container {
+		background-image: linear-gradient(to left, transparent 1%, white 67%), url(../images/wave.svg);
+	    background-position-x: -173px;
+    	background-position-y: 132px;
 	}
 }
 
-@media  screen and (max-width: 862px) {
+@media screen and (max-width: 862px) {
 	.hero-container h1 {
 		font-size: 48px;
+		line-height: 53px;
 	}
 	.hero-buttons {
 	    display: flex;
 	    flex-direction: column;
-	}
-    .hero-right img {
-		width: 348px;
-		height: 348px;
-		margin-top: 0;
 	}
 	.button-links {
 		width: 220px;
@@ -218,12 +208,33 @@ header img {
 	}
 }
 
-/*@media  screen and (max-width: 320px) {*/
-@media  screen and (max-width: 730px) {
-	.mobile-hero-img {
+@media screen and (max-width: 700px) {
+	.wrapper {
+		padding: 0 16px;
+	}
+	.hero-container {
+		background: none;
+	}
+	.hero-buttons {
+		align-items: center;
+	}
+	.login-button {
+		margin-right: 0;
+	}
+	.mobile-img-container {
 		display: block;
-		width: 288px;
-		margin-top: 55px;		
+		background-image: linear-gradient(to left, transparent 62%, white 75%), url(../images/wave.svg);
+	    background-repeat: no-repeat;
+	    margin-top: 55px;
+	    margin-bottom: 45px;
+	    background-position-x: -853px;
+	    background-position-y: 9px;
+	    height: 371px;
+	    background-size: cover;
+	    text-align: center;
+	}
+	.mobile-hero-img {
+		width: 288px;		
 	}
 	.hero-right {
 		display: none;
@@ -232,11 +243,11 @@ header img {
     	margin-bottom: 24px;
 	}
 	.links {
-		margin-top: 90px;
+		margin-top: 0;
 	}
 	.hero-container h1 {
-		/*font-size: 36px;
-		line-height: 40px*/
+		font-size: 36px;
+		line-height: 40px
 	}
 }
  

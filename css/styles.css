@@ -189,16 +189,18 @@ header img {
     	background-position-y: 132px;
 	}
 }
+@media screen and (max-width: 963px) {
+	.hero-buttons {
+	    display: flex;
+	    flex-direction: column;
+	}
+}
 
 @media screen and (max-width: 862px) {
 	.hero-container h1 {
 		font-size: 48px;
 		line-height: 53px;
-	}
-	.hero-buttons {
-	    display: flex;
-	    flex-direction: column;
-	}
+	}	
 	.button-links {
 		width: 220px;
     	text-align: center;

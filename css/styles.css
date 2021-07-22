@@ -30,7 +30,7 @@ header img {
 }
 .hero-container {
     display: flex;
-    background-image: linear-gradient(to left, transparent 62%, white 75%), url(../images/wave.svg);
+    background-image: linear-gradient(to left, rgba(255,255,255,0) 62%, white 75%), url(../images/wave.svg);
     background-repeat: no-repeat;
     background-position-x: -46px;
     background-position-y: 84px;
@@ -171,7 +171,7 @@ header img {
 
 @media screen and (min-device-width: 733px) and (max-width: 965px) {
 	.hero-container {
-		background-image: linear-gradient(to left, transparent 1%, white 67%), url(../images/wave.svg);
+		background-image: linear-gradient(to left, rgba(255,255,255,0) 1%, white 67%), url(../images/wave.svg);
 	    background-position-x: -173px;
     	background-position-y: 48px;
 	}
@@ -184,7 +184,7 @@ header img {
 
 @media screen and (min-device-width: 1011px) and (max-width: 1132px) {
 	.hero-container {
-		background-image: linear-gradient(to left, transparent 1%, white 67%), url(../images/wave.svg);
+		background-image: linear-gradient(to left, rgba(255,255,255,0) 62%, white 75%), url(../images/wave.svg);
 	    background-position-x: -173px;
     	background-position-y: 132px;
 	}
@@ -223,7 +223,7 @@ header img {
 	}
 	.mobile-img-container {
 		display: block;
-		background-image: linear-gradient(to left, transparent 62%, white 75%), url(../images/wave.svg);
+		background-image: linear-gradient(to left, rgba(255,255,255,0) 62%, white 75%), url(../images/wave.svg);
 	    background-repeat: no-repeat;
 	    margin-top: 55px;
 	    margin-bottom: 45px;

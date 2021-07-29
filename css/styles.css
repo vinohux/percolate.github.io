@@ -175,6 +175,18 @@ header img {
 	.button-links {
 		padding: 16px 15px;
 	}
+	.hero-buttons {
+	    display: flex;
+	    flex-direction: column;
+	}
+	
+	.button-links {
+		width: 220px;
+    	text-align: center;
+	}
+	.login-button {
+		margin-bottom: 32px;
+	}
 }
 @media screen and (max-width: 862px) {
 	.hero-container h1 {

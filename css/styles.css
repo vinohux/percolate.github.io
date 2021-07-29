@@ -91,8 +91,9 @@ header img {
     color: white;
     text-decoration: none;
     letter-spacing: 1px;
+    text-align: center;
 }
-.login-button {
+.seismic-button {
 	margin-right: 24px;
 	color: #152733;
 	border: 2px solid #152733;
@@ -166,87 +167,45 @@ header img {
   	margin-top: -19px;
 }
 
-@media screen and (min-width: 733px) and (max-width: 995px) {
+@media screen and (min-width: 775px) and (max-width: 995px) {	
+	.hero-buttons {
+	    flex-direction: column;
+	}
+	.seismic-button {
+		margin-bottom: 32px;
+		margin-right: 0;
+	}
+	
 	.hero-right img {
 		width: 348px;
 		height: 348px;
 		margin-top: 0;
 	}
-	.button-links {
-		padding: 16px 15px;
-	}
-}
-@media screen and (max-width: 862px) {
-	.hero-container h1 {
-		font-size: 48px;
-		line-height: 53px;
-	}	
-	.hero-buttons {
-	    display: flex;
-	    flex-direction: column;
-	}
-	.links {
-		width: calc(100% + 60px);
-	}
-	.button-links {
-		width: 220px;
-    	text-align: center;
-	}
-	.login-button {
-		margin-bottom: 32px;
-	}
+
 }
 
-@media screen and (max-width: 995px) {
-	.wrapper {
-		padding: 0 16px;
-	}
+@media screen and (max-width: 775px) {
 	.hero-buttons {
-		align-items: center;
+	    flex-direction: column;
 	}
-	.login-button {
+	.seismic-button {
+		margin-bottom: 16px;
 		margin-right: 0;
-	}
-	.mobile-img-container {
-		display: block;
-	    background-repeat: no-repeat;
-	    margin-top: 55px;
-	    margin-bottom: 45px;
-	    background-position-x: -853px;
-	    background-position-y: 9px;
-	    height: 371px;
-	    background-size: cover;
-	    text-align: center;
-	}
-	.mobile-hero-img {
-		width: 288px;		
 	}
 	.hero-right {
 		display: none;
 	}
-	.login-button {
-    	margin-bottom: 24px;
+	.mobile-img-container {
+		display: block;
+		margin-top: 55px;
+	    margin-bottom: 0;
+	    text-align: center;
+	}
+	.mobile-hero-img {
+		width: 288px;	
+		height: 288px;	
 	}
 	.links {
-		margin-top: 0;
-	}
-	.hero-container h1 {
-		font-size: 36px;
-		line-height: 40px
+		margin-top: 45px;
 	}
 }
-@media screen and (max-width: 390px)  {
-	.hero-buttons {
-	    display: flex;
-	    flex-direction: column;
-	}
-	
-	.button-links {
-		width: 220px;
-    	text-align: center;
-	}
-	.login-button {
-		margin-bottom: 32px;
-	}
-}
- 

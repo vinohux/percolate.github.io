@@ -166,7 +166,7 @@ header img {
   	margin-top: -19px;
 }
 
-@media screen and (min-device-width: 733px) and (max-width: 965px) {
+@media screen and (min-width: 733px) and (max-width: 965px) {
 	.hero-right img {
 		width: 348px;
 		height: 348px;

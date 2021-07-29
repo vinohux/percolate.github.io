@@ -33,15 +33,15 @@ header img {
     display: flex;  
 }
 .hero-overlay {
-   position: fixed;
+       position: fixed;
     background-image: url(../images/wave-background-desktop.png);
     background-repeat: no-repeat;
-    width: calc(100% + 200px);
-    height: 30%;
-    z-index: -1;
-    top: 50%;
     background-size: contain;
-    right: 15%;
+    width: calc(100% + 200px);
+    height: 30%;    
+    top: 438px;
+    right: 329px;
+    z-index: -1; 
 }
 .links {
     margin-top: 116px;
@@ -179,7 +179,7 @@ header img {
 
 @media screen and (min-device-width: 733px) and (max-width: 965px) {	
 	.hero-overlay {
-		right: 0;
+		right: 0;		
 	}
 	.hero-right img {
 		width: 348px;
@@ -253,11 +253,12 @@ header img {
 		line-height: 40px
 	}
 }
-@media only screen and (device-width: 390px)  {
-.hero-buttons {
+@media screen and (min-width: 390px)  {
+	.hero-buttons {
 	    display: flex;
 	    flex-direction: column;
 	}
+	
 	.button-links {
 		width: 220px;
     	text-align: center;
@@ -266,4 +267,20 @@ header img {
 		margin-bottom: 32px;
 	}
 }
+@media screen and (max-device-width: 390px)  {
+	.hero-overlay {
+		top: 478px;
+    right: 47px;
+	}
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px)  {
+	.hero-overlay {
+		top: 478px;
+    	right: 47px;
+	}
+}
+
+
+	
  
